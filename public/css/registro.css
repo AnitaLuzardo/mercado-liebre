@@ -1,0 +1,23 @@
+.form-register {
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+.form {
+    margin: 20px;
+    width: 60%;
+}
+
+.form > h3 {
+    font-size: 12px;
+}
+
+.inf {
+    margin: 10px;
+    width: 100%;
+}
+
+.user{
+    font-size: 12px;
+}
