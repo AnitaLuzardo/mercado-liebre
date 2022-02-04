@@ -49,10 +49,12 @@
     </header>
 
     <section class="form-register">
+        
         <form class="form">
-            <input type="text" id="fname" name="fname" placeholder="Nombre" class="inf"><br>
-            <input type="text" id="lname" name="lname" placeholder="Apellido" class="inf"><br>
-            <input type="text" id="mail" name="mail" placeholder="E-mail" class="inf">
+            <h2 class="register">Registrate</h2>
+            <input type="text" id="fname" name="fname" placeholder="Nombre" class="inf" required><br>
+            <input type="text" id="lname" name="lname" placeholder="Apellido" class="inf" required><br>
+            <input type="text" id="mail" name="mail" placeholder="E-mail" class="inf" required>
     
             <h3>Fecha de Nacimiento</h3>
             <input type="date" id="bday" name="bday" value="15/10/2000" class="inf"> <br>
@@ -63,23 +65,37 @@
                     <div class="user">
                         <input type="radio" id="comprador" name="usuario" value="Comprador">
                         <label for="comprador">Comprador</label>
-                    </div>
+                    </div><br>
                     <div class="user">
                         <input type="radio" id="vendedor" name="usuario" value="vendedor">
                         <label for="vendedor">Vendedor</label>
-                    </div>
+                    </div><br>
                 </div>
             <h3>Intereses</h3>
                 <input type="checkbox" id="electro" name="electro" value="Electro">
-                <label for="electro" class="user"> Electro</label><br>
+                <label for="electro" class="user"> Electro</label><br><br>
+
                 <input type="checkbox" id="moda" name="moda" value="Moda" >
-                <label for="Moda" class="user"> Moda</label><br>
+                <label for="Moda" class="user"> Moda</label><br><br>
+
                 <input type="checkbox" id="hogar" name="hogar" value="Hogar">
-                <label for="hogar" class="user"> Hogar</label><br>
+                <label for="hogar" class="user"> Hogar</label><br><br>
+
                 <input type="checkbox" id="jugueteria" name="jugueteria" value="jugueteria">
-                <label for="jugueteria" class="user">Jugueteria</label><br>
+                <label for="jugueteria" class="user">Jugueteria</label><br><br>
+
                 <input type="checkbox" id="vida sana" name="vida_sana" value="vida">
-                <label for="vida_sana" class="user">Vida sana</label>
+                <label for="vida_sana" class="user">Vida sana</label> <br> <br>
+
+                <label class="add-img" for="perfil"> Seleccionar imagen para el perfil</label>
+                <input type="file" name="avatar" class="img-perfil" accept=".jpg,.png"><br>
+
+                <input type="password" name="contraseña" placeholder="Contraseña" class="inf" required><br>
+                <input type="password" name="contraseña" placeholder="Confirmar Contraseña" class="inf" required>
+            
+
+                   
+            
         </form>
     </section>
 
