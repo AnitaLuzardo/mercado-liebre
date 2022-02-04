@@ -16,6 +16,10 @@ app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
 
-app.listen(3000, ()=>{
-    console.log('Servidor funcionando');
-});
+app.listen(process.env.PORT || 3000, function() {
+    console.log(`Servidor corriendo en el puerto`)
+})
+
+// app.listen(3000, ()=>{
+//     console.log('Servidor funcionando');
+// });
