@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Teko&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/27f832f48b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Login</title>
 </head>
@@ -15,7 +16,7 @@
         <section class="content-header">
             <section class="content-logo_buscador content">
                 <div class="content-buscador">
-                    <img src="imagenes/logo-mercado-liebre.svg" class= "logo content" alt="">
+                    <a href="/"> <img src="imagenes/logo-mercado-liebre.svg" class= "logo content" alt=""></a>
             
                     <form class="form-buscador content">
                         <input type="text" placeholder="Buscar productos, marcas" class="buscador">
@@ -39,36 +40,53 @@
                 </ul>
 
                 <ul class="menu-user">
-                    <li>Crea tu cuenta <i class="fas fa-portrait"></i></li>
-                    <li>Ingresa <i class="fas fa-sign-in-alt"></i></li>
+                    <li> <a href="/register">Crea tu cuenta</a><i class="fas fa-portrait"></i></li>
+                    <li> <a href="/login">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
                     <li>Mis compras <i class="fas fa-shopping-bag"></i></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div>
-        <h1>ESPACIO DE TRABAJO</h1>
-    </div>
+    <form action="" class="form-login">
+
+        <div class="content_form">
+            <h2 class="login-title">Iniciar Sesión</h2>
+            <br>
+            <p>*Estos campos son obligatorios</p>
+            <br>
+            <label for="comprador">*Email/ Nombre de Usuario</label><br>
+            <input type="text" class="input-login" name="email" placeholder="Ingrese su email o usuario" required>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <label for="comprador">*Contraseña</label><br>
+            <input type="password" class="input-login" name="contraseña" placeholder="Contraseña" required><br><br>
+            <button class="login-cuenta">Crear cuenta</button>
+        </div>
+    </form>
 
     <footer class="content-footer">
         <div class="informacion">
             <div class="info-content">
-                <i class="fas fa-credit-card"></i>
+                <i class="fas fa-credit-card icon-footer"></i>
                 <p> <strong>Pagá con tarjeta o en efectivo</strong>  <br>
                     Con Mercado Liebre Cash, tenés cuotas sin
                      interés con tarjeta o efectivo en puntos de 
                      pago. ¡Y siempre es seguro!</p>
             </div>
             <div class="info-content">
-                <i class="fas fa-gift"></i>
+                <i class="fas fa-gift icon-footer"></i>
                 <p> <strong>Envío gratis desde $ 2.500</strong>  <br>
                     Solo por estar registrad@ en Mercado Liebre
                     tenés envíos gratis en miles de productos. Es 
                     un beneficio de Mercado Puntos.</p>
             </div>
             <div class="info-content">
-                <i class="fas fa-user-shield"></i>
+                <i class="fas fa-user-shield icon-footer"></i>
                 <p> <strong>Seguridad, de principio a fin</strong> <br>
                     ¿No te gusta? ¡Devolvelo! En Mercado Liebre, 
                      no hay nada que no puedas hacer,porque 
